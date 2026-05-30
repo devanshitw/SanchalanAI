@@ -1,6 +1,15 @@
 {
   "$schema": "https://schema.railpack.com",
   "provider": "python",
+  "buildAptPackages": [
+    "libxcb1",
+    "libx11-6",
+    "libxext6",
+    "libxrender1",
+    "libsm6",
+    "libxrandr2",
+    "libglib2.0-0"
+  ],
   "deploy": {
     "startCommand": "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"
   }
