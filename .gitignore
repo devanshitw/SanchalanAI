@@ -1,0 +1,5 @@
+qdrant-windows/
+qdrant-x86_64-pc-windows-msvc.zip
+.venv/
+__pycache__/
+*.py[cod]
